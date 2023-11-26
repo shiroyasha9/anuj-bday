@@ -15,7 +15,7 @@ export default function Home() {
   const arizonaTime = dayjs().tz("America/Phoenix");
   const formattedDateTime = arizonaTime.format("MMM D, YYYY h:mm A");
 
-  const is27th = arizonaTime.date() === 27;
+  const is27th = arizonaTime.date() === 27 && arizonaTime.month() === 10;
   return (
     <div className="h-screen flex items-center justify-center flex-col relative px-4">
       <div className="prose text-center max-w-none">
