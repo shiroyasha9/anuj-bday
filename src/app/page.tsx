@@ -23,7 +23,11 @@ export default function Home() {
             ? "Lesssgoo it's birthday for Anuj too! 🥳🎉"
             : "It is not yet birthday for Anuj ☹️😞"}
         </h1>
-        <h2>Happy Birthday Bhai (from India)! 🎉🎉🎉</h2>
+        <h3>Happy Birthday Bhai! 🎉🎉🎉</h3>
+        <small>
+          (from <b>Mubin</b> from Navi Mumbai, MH, India, Asia, Earth, Solar
+          System, Milky Way, Universe)
+        </small>
         <blockquote>
           {is27th
             ? "Humko kaam karna hai bhai - tere jaise thodi US mai rizz game khelre. We are building the next OpenAI - also Niru (IBM)."
