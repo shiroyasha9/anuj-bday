@@ -3,6 +3,7 @@ import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -16,8 +17,15 @@ export default function Home() {
 
   const is27th = arizonaTime.date() === 27;
   return (
-    <div className="h-screen flex items-center justify-center flex-col relative p-4">
+    <div className="h-screen flex items-center justify-center flex-col relative px-4">
       <div className="prose text-center max-w-none">
+        <Image
+          src={is27th ? "/happy.jpg" : "/sad.jpeg"}
+          width={250}
+          height={200}
+          className="mx-auto"
+          alt="Anuj Photo"
+        />
         <h1>
           {is27th
             ? "Lesssgoo it's birthday for Anuj too! 🥳🎉"
