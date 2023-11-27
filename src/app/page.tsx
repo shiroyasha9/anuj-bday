@@ -42,7 +42,7 @@ export default function Home() {
             : "Humko sona hai bhai - tere jaise thodi US mai rizz game khelre. We are building the next OpenAI - Niru (IBM)."}
         </blockquote>
       </div>
-      <div className="absolute bottom-12 flex flex-col items-center prose space-y-2">
+      <div className="flex flex-col items-center prose space-y-2 mt-32">
         <span>Time in Arizona:</span>
         <Badge variant="outline">{formattedDateTime}</Badge>
         <cite>
